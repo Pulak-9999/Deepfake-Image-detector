@@ -1,10 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template # <--- Check karo yahan 'render_template' likha hai ya nahi
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "<h1>DeepScan AI is Running!</h1><p>The system is ready for the next task.</p>"
+    # Pehle yahan return "DeepScan AI is Running" tha, ab ye likho:
+    return render_template('index.html') 
 
 if __name__ == '__main__':
     app.run(debug=True)
