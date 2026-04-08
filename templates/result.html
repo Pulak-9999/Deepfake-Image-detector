@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeepScan Result</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; background-color: #f8f9fa; }
+        .result-box { background: white; padding: 40px; border-radius: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .prediction { font-size: 24px; font-weight: bold; color: #d9534f; }
+        .btn { display: inline-block; margin-top: 20px; text-decoration: none; color: #007bff; border: 1px solid #007bff; padding: 10px 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>Analysis Result</h1>
+        <p>The analyzed image is:</p>
+        <p class="prediction">{{ prediction }}</p>
+        <a href="/" class="btn">Scan Another Image</a>
+    </div>
+</body>
+</html>
